@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./pics/profile-pic.png">
+    <title>AJ Tekniko - Games</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: auto;
+            height: 100vh;
+            background-color: black;
+            font-family: Arial, sans-serif;
+        }
+
+        .stars{
+            width: 2px;
+            height: 2px;
+            background: white;
+            position: absolute;
+            box-shadow: 50px 100px white, 75px 430px white, 130px 80px white,
+                150px 300px white, 180px 200px white, 250px 270px white,
+                300px 150px white, 370px 310px white, 400px 90px white,
+                500px 180px white, 520px 350px white, 600px 130px white,
+                620px 390px white, 700px 220px white, 720px 430px white,
+                800px 170px white, 800px 300px white, 900px 40px white,
+                975px 250px white, 1050px 140px white, 1150px 300px white,
+                1250px 60px white,
+                1330px 140px white, 1380px 100px white, 1405px 430px white,
+                1460px 200px white, 1480px 300px white, 1510px 80px white,
+                1580px 310px white, 1630px 150px white, 1700px 270px white,
+                1730px 350px white, 1830px 180px white, 1850px 90px white,
+                1930px 220px white, 1950px 390px white, 2030px 130px white,
+                2050px 300px white, 2130px 170px white, 2130px 430px white,
+                2230px 140px white, 2305px 250px white, 2380px 40px white,
+                2480px 300px white
+                ;
+            animation: twinkle 2s infinite ease-in-out alternate;
+        }
+        
+        @keyframes twinkle {
+            0%{opacity: 0.3;}
+            100%{opacity: 1;}
+        }
+
+        .header {
+            text-align: center;
+            margin: 20px;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-top: 20px;
+            text-shadow: 0 0 20px #00ff00;
+            color: #00ff00;
+        }
+
+        .profile {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            border: 5px solid #00ff00;
+            margin: 20px auto;
+            background-image: url('./pics/profile-pic.png');
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 0 13px #00ff00;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            background: linear-gradient(
+            90deg, #454545 0%,
+                   #828282 25%,
+                   #999999 50%,
+                   #828282 75%,
+                   #454545 100%
+            );
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        nav ul li a:hover {
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #00ff00;
+        }
+
+        nav ul li a:active {
+            background: linear-gradient(
+            90deg, #343434 0%,
+                   #717171 25%,
+                   #888888 50%,
+                   #717171 75%,
+                   #343434 100%
+            );
+            color: #000;
+        }
+
+        .outer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            position: relative;
+            width: 60%;
+            height: 52%;
+            color: #fff;
+            background-color: #222;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.6em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px #00ff00;
+            color: #00ff00;
+            text-align: center;
+        }
+
+        .image-text {
+            display: inline-block;
+            margin: 20px 40px;
+        }
+
+        .image-text img { 
+            width: 150px;
+            height: 150px;
+        }
+
+        .img-links {
+            margin-bottom: 10px;           
+        }
+
+        .img-links:hover {
+            color: #000;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00ff00;
+        }
+
+        .img-links:active {
+            filter: brightness(50%);
+        }
+
+
+        @media screen and (max-width: 875px) {
+            .container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .image-text {
+                margin-top: 25px;
+                margin-bottom: 30px;
+            }
+        }        
+    </style>
+</head>
+<body>
+    <div class="stars">
+    </div>
+    <div class="header">
+        <h1>AJ Tekniko</h1>
+        </div>
+    <div class="profile"></div>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./videos.html">Videos</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./games.html">Games</a></li>
+        </ul>
+    </nav>
+    <div class="outer-container">
+    <div class="container">
+        <h2>Games</h2>
+        <div class="image-text">
+            <a href="https://ajtekniko.github.io/hab/en/"><img class="img-links" src="./pics/have-a-blast.png" alt="Hava a Blast gameplay screen capture"></a>
+            <p>Have a Blast!</p>
+        </div>
+        <div class="image-text">
+            <a href="./uc.html"><img class="img-links" src="./pics/mind-blown.png" alt="An explosive device"></a>
+            <p>Mind Blown (Coming soon)</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
